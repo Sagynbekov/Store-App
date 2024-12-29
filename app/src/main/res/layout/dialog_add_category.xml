@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="32dp"
+    android:background="@android:color/white"
+    card_view:cardCornerRadius="16dp"
+    card_view:cardElevation="8dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <!-- Заголовок -->
+        <TextView
+            android:id="@+id/dialogTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="Добавить категорию"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <!-- Подпись для поля ввода -->
+        <TextView
+            android:id="@+id/categoryNameLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="Название категории:" />
+
+        <!-- Поле ввода -->
+        <EditText
+            android:id="@+id/categoryNameInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/rounded_edittext"
+            android:padding="8dp" />
+
+        <!-- Кнопка "Добавить" -->
+        <Button
+            android:id="@+id/addCategoryConfirmButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:text="Добавить"
+            android:backgroundTint="#0094FF" />
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
